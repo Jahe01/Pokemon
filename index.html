@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Kakuna</title>
+    <link rel="stylesheet" href="styles.css">
+    <link id="favicon" rel="icon" href="data:,"> <!-- Placeholder favicon -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Incluir Chart.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script> <!-- Incluir GSAP -->
+</head>
+<body>
+    <header>
+        <h1>
+            Página de Kakuna
+            <img id="pokeball" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/poke-ball.png" alt="Pokébola">
+        </h1>
+    </header>
+    <main>
+        <section id="pokemon-info">
+            <div class="pokemon-image">
+                <img id="pokemon-sprite" alt="Imagen de Kakuna">
+            </div>
+            <div class="pokemon-details">
+                <h2 id="pokemon-name">Nombre: Kakuna</h2>
+                <p id="pokemon-description">Aunque es casi incapaz de moverse, en caso de sentirse amenazado puede envenenar a los enemigos con su aguijón.</p>
+                <div id="pokemon-types-container">
+                    <h3>Tipos:</h3>
+                    <div id="pokemon-types"></div>
+                </div>
+                <div id="pokemon-weaknesses-container">
+                    <h3>Debilidades:</h3>
+                    <div id="pokemon-weaknesses"></div>
+                </div>
+                <div id="pokemon-abilities-container">
+                    <h3>Habilidades:</h3>
+                    <div id="pokemon-abilities"></div>
+                </div>
+                <div id="pokemon-moves-container">
+                    <h3>Movimientos:</h3>
+                    <div id="pokemon-moves"></div>
+                </div>
+                <div id="pokemon-stats-container">
+                    <h3>Estadísticas:</h3>
+                    <div id="pokemon-stats"></div>
+                </div>
+                <canvas id="statsChart" width="400" height="400"></canvas> <!-- Canvas para el gráfico -->
+            </div>
+        </section>
+        <section id="pokemon-evolution">
+            <h2>Evoluciones</h2>
+            <div class="evolution-images">
+                <img src="https://i.pinimg.com/564x/04/ee/9d/04ee9d95f50e28308d58198e107d5d4d.jpg" alt="Kakuna Evolution">
+            </div>
+        </section>
+        <section id="spotify">
+            <h2>Música de Spotify</h2>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/5DZB8KQQUoDXFCZelhGtip?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </section>
+    </main>
+    <footer>
+        <p>Desarrollado por: Johanna Huaraca</p>
+        <p>Contacto: johanna.huaraca@epn.edu.ec</p>
+        <p><a href="https://github.com/Jahe01">GitHub</a></p>
+        <p>Instagram: <a href="https://www.instagram.com/_sopitacasera_/">sopita casera</a></p>
+    </footer>
+    <div id="kakuna-icon-container">
+        <img id="kakuna-icon" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/14.png" alt="Kakuna">
+    </div>
+    <div id="ability-info" class="ability-info"></div> <!-- Contenedor para la información de la habilidad -->
+    <script src="script.js"></script>
+</body>
+</html>
